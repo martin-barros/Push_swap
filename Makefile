@@ -17,7 +17,7 @@ prog_name = push_swap
 name = libpushswap.a
 
 push_functions = push_swap.c push_swap_utils.c make_stack.c \
-				push_swap_more_utils.c commands.c more_commands.c \
+		push_swap_more_utils.c commands.c more_commands.c \
 
 push_objs = $(push_functions:.c=.o)
 
