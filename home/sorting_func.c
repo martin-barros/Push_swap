@@ -12,7 +12,7 @@
 
 #include "pushswap.h"
 
-void    move_index(t_list **head, int index)
+void    move_index(t_list *head, int index)
 {
     ft_lstlast(*head)->index = index;
     while (*head->next)
@@ -23,7 +23,7 @@ void    move_index(t_list **head, int index)
     }
 }
 
-void    sort_index(t_list **head)
+void    sort_index(t_list *head)
 {
     int i;
     int *ptr1;
