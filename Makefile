@@ -6,7 +6,7 @@
 #    By: mabarros <mabarros@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/06/24 19:12:30 by mabarros          #+#    #+#              #
-#    Updated: 2025/07/06 04:33:11 by mabarros         ###   ########.fr        #
+#    Updated: 2025/07/22 21:40:08 by mabarros         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -17,7 +17,7 @@ prog_name = push_swap
 name = libpushswap.a
 
 push_functions = push_swap.c push_swap_utils.c make_stack.c \
-				push_swap_more_utils.c commands.c more_commands.c \
+			push_swap_more_utils.c commands.c sorting.c sort_3_5.c\
 
 push_objs = $(push_functions:.c=.o)
 

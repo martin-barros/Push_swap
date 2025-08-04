@@ -6,7 +6,7 @@
 /*   By: mabarros <mabarros@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/16 18:58:32 by mabarros          #+#    #+#             */
-/*   Updated: 2025/04/29 21:17:01 by mabarros         ###   ########.fr       */
+/*   Updated: 2025/08/04 12:19:14 by mabarros         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,13 +49,11 @@ static size_t	ft_how_many(char const *s, char c, char **lst)
 
 char	**ft_split(char const *s, char c)
 {
-	size_t	i;
 	size_t	how_many_words;
 	char	**word_list;
 
 	if (s == NULL)
 		return (ft_calloc(sizeof(char *), 1));
-	i = 0;
 	how_many_words = ft_how_many(s, c, NULL);
 	word_list = ft_calloc(sizeof(char *), how_many_words + 1);
 	if (word_list == NULL)

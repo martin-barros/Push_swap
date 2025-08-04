@@ -6,7 +6,7 @@
 /*   By: mabarros <mabarros@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/28 19:18:58 by mabarros          #+#    #+#             */
-/*   Updated: 2025/07/06 04:36:28 by mabarros         ###   ########.fr       */
+/*   Updated: 2025/07/21 19:57:58 by mabarros         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@ int	has_whitespace(char	*arr)
 
 int	is_int_limit(char **arr, int size)
 {
-	int i;
+	int	i;
 
 	i = 1;
 	if (size <= 0)
@@ -50,14 +50,14 @@ int	only_digits(char **arr, int size)
 	i = 1;
 	if (size <= 0)
 		return (0);
-	while (i <= size )
+	while (i <= size)
 	{
 		x = 0;
 		if (!signs(arr[i]))
 			return (0);
 		while (arr[i][x])
 		{
-			if (!ft_isdigit(arr[i][x]) && arr[i][x] != '-' && arr[i][x] != '+' 
+			if (!ft_isdigit(arr[i][x]) && arr[i][x] != '-' && arr[i][x] != '+'
 				&& arr[i][x] != ' ')
 				return (0);
 			x++;
@@ -67,32 +67,32 @@ int	only_digits(char **arr, int size)
 	return (1);
 }
 
-int	no_repeat(char **arr, int size)
-{
-	int i;
-	int x;
+// int	no_repeat(char **arr, int size)
+// {
+// 	int	i;
+// 	int	x;
 
-	i = 1;
-	if (size <= 0)
-		return (0);
-	while (i < size)
-	{
-		x = i + 1;
-		if (has_whitespace(arr[i]))
-		{
-			if (!repeat_in_out(arr[i], arr, i, size))
-				return (0);
-		}
-		while (x <= size)
-		{
-			if (ft_atoi_fixed(arr[i]) == ft_atoi_fixed(arr[x]))
-				return (0);
-			x++;
-		}
-		i++;
-	}
-	return (1);
-}
+// 	i = 1;
+// 	if (size <= 0)
+// 		return (0);
+// 	while (i < size)
+// 	{
+// 		x = i + 1;
+// 		if (has_whitespace(arr[i]))
+// 		{
+// 			if (!repeat_in_out(arr[i], arr, i, size))
+// 				return (0);
+// 		}
+// 		while (x <= size)
+// 		{
+// 			if (ft_atoi_fixed(arr[i]) == ft_atoi_fixed(arr[x]))
+// 				return (0);
+// 			x++;
+// 		}
+// 		i++;
+// 	}
+// 	return (1);
+// }
 
 int	ft_atoi_fixed(const char *nptr)
 {

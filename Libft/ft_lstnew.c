@@ -6,7 +6,7 @@
 /*   By: mabarros <mabarros@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/20 15:06:58 by mabarros          #+#    #+#             */
-/*   Updated: 2025/06/29 03:26:16 by mabarros         ###   ########.fr       */
+/*   Updated: 2025/07/07 11:23:37 by mabarros         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,5 +21,6 @@ t_list	*ft_lstnew(void *content)
 		return (NULL);
 	node->content = content;
 	node->next = NULL;
+	node->index = 0;
 	return (node);
 }

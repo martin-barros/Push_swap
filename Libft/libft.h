@@ -6,7 +6,7 @@
 /*   By: mabarros <mabarros@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/11 18:13:02 by mabarros          #+#    #+#             */
-/*   Updated: 2025/06/29 03:52:22 by mabarros         ###   ########.fr       */
+/*   Updated: 2025/07/07 11:22:51 by mabarros         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,6 +25,7 @@ typedef struct s_list
 {
 	void			*content;
 	struct s_list	*next;
+	int				index;
 }					t_list;
 
 size_t	ft_strlen(const char *s);
